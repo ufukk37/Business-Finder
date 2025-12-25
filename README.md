@@ -59,11 +59,6 @@ Google Maps üzerinden işletmeleri otomatik olarak keşfeden, veritabanına kay
 Zip dosyasını indir ve bir klasöre çıkar
 ```
 
-#### 2. API Key'i Ayarla
-`backend\.env` dosyasını aç ve API key'ini gir:
-```
-GOOGLE_PLACES_API_KEY=AIzaSyXXXXXXXXXXXXXXXXX
-```
 
 #### 3. Başlat
 `start-windows.bat` dosyasına çift tıkla!
@@ -136,18 +131,6 @@ GET http://localhost:8000/api/businesses/?city=İstanbul&min_rating=4
 ### API Dokümantasyonu
 Tarayıcıda aç: http://localhost:8000/docs
 
-## 🔐 Google Places API Key Alma
-
-1. [Google Cloud Console](https://console.cloud.google.com/) aç
-2. Yeni proje oluştur
-3. "APIs & Services" > "Enable APIs"
-4. **"Places API"** ve **"Geocoding API"** etkinleştir
-5. "Credentials" > "Create Credentials" > "API Key"
-6. Key'i kopyala ve `backend\.env` dosyasına yapıştır
-
-### API Limitleri
-- **Ücretsiz**: Aylık $200 kredi (yaklaşık 5000 arama)
-- Detaylı fiyatlandırma: [Google Maps Pricing](https://developers.google.com/maps/billing-and-pricing/pricing)
 
 ## 🔮 Gelecek Özellikler
 
